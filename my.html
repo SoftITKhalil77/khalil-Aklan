@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>ميزات رقمية</title>
+<style>
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f0f4f8;
+    margin: 20px;
+  }
+  .container {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  .card {
+    background-color: #fff;
+    border-radius: 15px;
+    padding: 25px 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    text-align: center;
+  }
+  .icon-wrapper {
+    background-color: #d9eaff;
+    width: 90px;
+    height: 90px;
+    margin: 0 auto 15px auto;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  /* لون خلفية مختلف لبعض الأيقونات مميز */
+  .icon-wrapper.lock {
+    background-color: #e2f0c6;
+  }
+  .icon-wrapper.money {
+    background-color: #fee7d0;
+  }
+  .icon-wrapper.chat {
+    background-color: #d6f0f6;
+  }
+  .icon-wrapper.shield {
+    background-color: #e7d6f6;
+  }
+  .icon-wrapper.wallet {
+    background-color: #fde7e7;
+  }
+  .icon-wrapper.expand {
+    background-color: #d7f6e7;
+  }
+
+  .icon-wrapper svg {
+    width: 40px;
+    height: 40px;
+    fill: #0e2a4a;
+  }
+  h2 {
+    font-size: 22px;
+    color: #1a355e;
+    margin-bottom: 12px;
+  }
+  p {
+    font-size: 16px;
+    color: #444;
+    line-height: 1.5;
+    margin: 0 10px;
+    text-align: right;
+  }
+
+  /* تنسيق السهم العودي البسيط */
+  .back-link {
+    position: fixed;
+    top: 16px;
+    right: 16px;
+    background: #ffffff;
+    padding: 8px 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+    text-decoration: none;
+    color: #0e2a4a;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    z-index: 999;
+  }
+  .back-link svg {
+    width: 18px;
+    height: 18px;
+    fill: #0e2a4a;
+    transform: rotate(0deg);
+  }
+
+  /* بطاقة المعلومات الإضافية (الشعار، المبرمج، المراجع، تواصل) */
+  .meta-card {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 14px;
+    align-items: center;
+    text-align: center;
+  }
+  .logo {
+    max-width: 160px;
+    margin: 0 auto;
+    display: block;
+  }
+  .meta-list {
+    text-align: right;
+    direction: rtl;
+    font-size: 15px;
+    color: #333;
+  }
+  .meta-list b { color: #1a355e; }
+
+  /* قسم التواصل العمودي */
+  .support {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    margin-top: 6px;
+  }
+  .contact-item {
+    width: 100%;
+    max-width: 360px;
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    background: #fbfdff;
+    border-radius: 12px;
+    padding: 10px 12px;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.04);
+    text-decoration: none;
+    color: #0e2a4a;
+    transition: transform .12s, box-shadow .12s;
+    justify-content: flex-start;
+  }
+  .contact-item:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 18px rgba(0,0,0,0.08);
+  }
+  .contact-icon {
+    width: 44px;
+    height: 44px;
+    min-width: 44px;
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: #eef7ff;
+  }
+  .contact-icon.whatsapp { background: #e7f9ee; }
+  .contact-icon.telegram { background: #eaf5ff; }
+  .contact-text {
+    text-align: right;
+    flex: 1;
+    font-weight: 600;
+  }
+  .contact-sub {
+    font-size: 13px;
+    color: #6b7480;
+    margin-top: 2px;
+    font-weight: 400;
+  }
+
+  /* الحفاظ على التنسيق عند الشاشات الكبيرة */
+  @media (min-width: 900px) {
+    .container { max-width: 760px; }
+  }
+</style>
+</head>
+<body>
+  <!-- سهم العودة -->
+  <a class="back-link" href="index.html" aria-label="العودة إلى الصفحة السابقة">
+    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <!-- سهم يشير لليمين (مناسب للـ RTL) -->
+      <path d="M10.59 7.41L15.17 12l-4.58 4.59L12 18l6-6-6-6z"/>
+    </svg>
+    العودة
+  </a>
+
+  <div class="container">
+
+       
+
+    <!-- بطاقة المعلومات الإضافية: الشعار، المبرمج، المراجع، تواصل -->
+    <div class="card meta-card" role="region" aria-label="معلومات الموقع والمبرمج والدعم">
+    
+      <img class="logo" src="a.png" alt="شعار الموقع (استبدل logo.png بشعارك)" />
+
+      <div class="meta-list">
+        <div><b>عن المبرمج:</b> الموقع تم تصميمه وتطويره وبرمجته وتنسيقه بواسطة خليل أمين محمد عبده عقلان.</div>
+        <div style="height:8px"></div>
+        <div><b>مراجعة:</b> تم إعادة المراجعة من قبل رافت سعيد.</div>
+      </div>
+
+      <div style="width:100%; margin-top:6px; text-align:center;">
+        <div style="font-weight:700; color:#1a355e; margin-bottom:8px;">للتواصل مع الدعم الفني</div>
+
+        <div class="support" aria-hidden="false">
+          <!-- واتساب -->
+          <a class="contact-item" href="https://wa.me/967733748689" title="رسالة واتس اب (استبدل الرابط برابط واتساب الفعلي)" target="_blank" rel="noopener noreferrer">
+            <span class="contact-icon whatsapp" aria-hidden="true">
+              <!-- أيقونة واتساب -->
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="20"><path d="M20.52 3.48A11.9 11.9 0 0 0 12 0C5.37 0 0 5.37 0 12c0 2.12.56 4.09 1.53 5.84L0 24l6.43-1.67A11.9 11.9 0 0 0 12 24c6.63 0 12-5.37 12-12 0-3.2-1.25-6.2-3.48-8.52zM12 21.6c-1.6 0-3.16-.42-4.56-1.22l-.33-.2-3.83.99.99-3.77-.21-.34A9.6 9.6 0 0 1 2.4 12 9.6 9.6 0 0 1 12 2.4c5.3 0 9.6 4.31 9.6 9.6S17.3 21.6 12 21.6z"/><path d="M17.5 13.28c-.26-.13-1.54-.76-1.78-.85-.24-.09-.41-.13-.58.13-.16.26-.63.85-.77 1.02-.14.17-.28.19-.52.06-.24-.13-1.01-.37-1.92-1.19-.71-.64-1.19-1.43-1.33-1.67-.14-.24 0-.36.11-.48.11-.11.24-.28.36-.42.12-.14.16-.24.24-.4.08-.16.04-.3-.02-.42-.06-.11-.58-1.4-.79-1.9-.21-.5-.42-.43-.57-.44-.15-.01-.32-.01-.49-.01s-.42.06-.64.3c-.22.24-.84.82-.84 2.01 0 1.19.86 2.34.98 2.5.12.17 1.69 2.6 4.1 3.64 2.41 1.04 2.41.7 2.85.66.44-.04 1.42-.58 1.62-1.14.2-.56.2-1.03.14-1.14-.06-.11-.23-.17-.48-.3z"/></svg>
+            </span>
+            <div style="flex:1; text-align:right;">
+              <div class="contact-text">واتس اب</div>
+              <div class="contact-sub">اضغط للرسالة عبر واتس اب</div>
+            </div>
+          </a>
+
+          <!-- قناة تيلجرام -->
+          <a class="contact-item" href="https://t.me/khalil_program" title="https://t.me/khalil_program" target="_blank" rel="noopener noreferrer">
+            <span class="contact-icon telegram" aria-hidden="true">
+              <!-- أيقونة قناة تليجرام -->
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" width="20" height="20"><path d="M20 120c0 55.23 44.77 100 100 100s100-44.77 100-100S175.23 20 120 20 20 64.77 20 120z"/><path fill="#fff" d="M175.7 86.2l-21.3 99.6c-1.6 7.2-5.8 9-11.8 5.6l-33.2-24.4-16 15.4c-1.8 1.8-3.3 3.3-6.7 3.3l2.4-34.1 61.9-55.9c2.7-2.4-.6-3.7-4.2-1.3L70.2 128.6 38.6 116.3c-7.6-2.6-7.7-7.6 1.6-11.2L169.7 74.6c6.8-2.2 12.8 1.9 6 11.6z"/></svg>
+            </span>
+            <div style="flex:1; text-align:right;">
+              <div class="contact-text">قناة تيلجرام</div>
+              <div class="contact-sub">رابط القناة للنشرات والدعم</div>
+            </div>
+          </a>
+
+          <!-- حساب تيلجرام -->
+          <a class="contact-item" href="https://t.me/KHaL804" title="حساب تيلجرام (استبدل الرابط باسم المستخدم)" target="_blank" rel="noopener noreferrer">
+            <span class="contact-icon telegram" aria-hidden="true">
+              <!-- أيقونة تليجرام (مستخدم) -->
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="20"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm4.3 7.2l-1.8 8.2c-.1.4-.4.5-.8.3l-2.3-1.8-1.1 1.1c-.1.1-.2.2-.4.2-.1 0-.2 0-.3-.1-.3-.1-1.7-.6-3.6-1.8-1.3-.7-2.3-1.5-2.3-1.5-.4-.3-.4-.8 0-1.1l.4-.3 3.8-1.5 7-4.3c.3-.2.7.1.5.5z" fill="#fff"/></svg>
+            </span>
+            <div style="flex:1; text-align:right;">
+              <div class="contact-text">حساب تيلجرام</div>
+              <div class="contact-sub">رسائل ودعم فني مباشر</div>
+            </div>
+          </a>
+
+        </div>
+      </div>
+
+    </div><!-- نهاية meta-card -->
+
+  </div>
+</body>
+</html>

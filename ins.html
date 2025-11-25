@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>ميزات رقمية - صورة عريضة</title>
+<style>
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f0f4f8;
+    margin: 20px;
+  }
+  .container {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  .card {
+    background-color: #fff;
+    border-radius: 15px;
+    padding: 20px 20px 30px 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    text-align: center;
+  }
+  .image-wrapper {
+    width: 100%;
+    max-height: 480px; /* يمكن تعديل الارتفاع */
+    margin-bottom: 15px;
+    overflow: hidden;
+    border-radius: 15px 15px 0 0; /* زوايا علوية دائرية */
+    background-color: #d9eaff; /* خلفية احتياطية */
+  }
+  .image-wrapper img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover; /* لتغطية العرض والارتفاع بشكل متناسق */
+  }
+  h2 {
+    font-size: 22px;
+    color: #1a355e;
+    margin-bottom: 12px;
+  }
+  p {
+    font-size: 16px;
+    color: #444;
+    line-height: 1.5;
+    margin: 0 10px;
+  }
+  
+  /* زر الرجوع */
+.back-link {
+  position: fixed;
+  top: 16px;
+  right: 16px;
+  background: #ffffff;
+  padding: 8px 10px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+  text-decoration: none;
+  color: #0e2a4a;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  z-index: 999;
+}
+
+.back-link svg {
+  width: 18px;
+  height: 18px;
+  fill: #0e2a4a;
+}
+</style>
+</head>
+<body>
+  
+  
+  
+  <div class="container">
+<a class="back-link" href="index.html" aria-label="العودة">
+  <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+    <path d="M10.59 7.41L15.17 12l-4.58 4.59L12 18l6-6-6-6z"/>
+  </svg>
+  العودة
+</a>
+    <!-- بطاقة تجربة رقمية بالكامل -->
+    <div class="card">
+      <div class="image-wrapper">
+        <img src="a1.png" alt="تجربة رقمية بالكامل" />
+      </div>
+      <h2>البطاقة الالكترونية</h2>
+  
+    </div>
+
+    <!-- بطاقة منصة موحدة -->
+    <div class="card">
+      <div class="image-wrapper">
+        <img src="a2.png" alt="منصة موحدة" />
+      </div>
+     <h2>الصراف الالي والالكتروني</h2>
+    </div>
+
+    <!-- بطاقة توصيات مالية ذكية -->
+    <div class="card">
+      <div class="image-wrapper">
+        <img src="a3.png" alt="توصيات مالية ذكية" />
+      </div>
+ 
+          <h2>تطبيق بنك اليمن الرقمي</h2>
+    </div>
+
+    <!-- بطاقة تحويلات فورية -->
+    <div class="card">
+      <div class="image-wrapper">
+        <img src="a4.png" alt="تحويلات فورية" />
+      </div>
+       <h2>التحويل والدفع الكتروني</h2>
+      
+    </div>
+
+    
+
+    
+
+  </div>
+</body>
+</html>

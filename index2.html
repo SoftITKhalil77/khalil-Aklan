@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>ميزات رقمية</title>
+<style>
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f0f4f8;
+    margin: 20px;
+  }
+  .container {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  .card {
+    background-color: #fff;
+    border-radius: 15px;
+    padding: 25px 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    text-align: center;
+  }
+  .icon-wrapper {
+    background-color: #d9eaff;
+    width: 90px;
+    height: 90px;
+    margin: 0 auto 15px auto;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  /* لون خلفية مختلف لبعض الأيقونات مميز */
+  .icon-wrapper.lock {
+    background-color: #e2f0c6;
+  }
+  .icon-wrapper.money {
+    background-color: #fee7d0;
+  }
+  .icon-wrapper.chat {
+    background-color: #d6f0f6;
+  }
+  .icon-wrapper.shield {
+    background-color: #e7d6f6;
+  }
+  .icon-wrapper.wallet {
+    background-color: #fde7e7;
+  }
+  .icon-wrapper.expand {
+    background-color: #d7f6e7;
+  }
+
+  .icon-wrapper svg {
+    width: 40px;
+    height: 40px;
+    fill: #0e2a4a;
+  }
+  h2 {
+    font-size: 22px;
+    color: #1a355e;
+    margin-bottom: 12px;
+  }
+  p {
+    font-size: 16px;
+    color: #444;
+    line-height: 1.5;
+    margin: 0 10px;
+  }
+
+  /* تنسيق السهم العودي البسيط */
+  .back-link {
+    position: fixed;
+    top: 16px;
+    right: 16px;
+    background: #ffffff;
+    padding: 8px 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+    text-decoration: none;
+    color: #0e2a4a;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    z-index: 999;
+  }
+  .back-link svg {
+    width: 18px;
+    height: 18px;
+    fill: #0e2a4a;
+    transform: rotate(0deg);
+  }
+</style>
+</head>
+<body>
+  <!-- سهم العودة -->
+  <a class="back-link" href="index.html" aria-label="العودة إلى الصفحة السابقة">
+    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <!-- سهم يشير لليمين (مناسب للـ RTL) -->
+      <path d="M10.59 7.41L15.17 12l-4.58 4.59L12 18l6-6-6-6z"/>
+    </svg>
+    العودة
+  </a>
+
+  <div class="container">
+
+    <!-- بطاقة تجربة رقمية بالكامل -->
+    <div class="card">
+      <div class="icon-wrapper">
+        <!-- أيقونة مبنى بنك (تمثيل البنك) -->
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 3 2 9v2h20V9L12 3zm0 2.18L18.76 9H5.24L12 5.18zM4 11v7a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-7H4zm4 2h2v5H8v-5zm4 0h2v5h-2v-5zm4 0h2v5h-2v-5z"/></svg>
+      </div>
+      <h2>البنك اليمن الرقمي (Yemen Digital Bank)</h2>
+      <p> هو المنصة المصرفية الرقمية الرائدة والأولى من نوعها في اليمن و التي تسعى لتقديم الحل الأمثل للخدمات المالية المبتكرة فى البلاد، ويعمل البنك ك نظام مالي متكامل وموحد يجمع كل البنوك والمصارف في تطبيق واحد مما يتيح للعملاء افراد و شركات تنفيذ جميع معاملاتهم المصرفية و التحويلات النقدية</p>
+    </div>
+
+    <!-- بطاقة منصة موحدة -->
+    <div class="card">
+      <div class="icon-wrapper money">
+        <!-- أيقونة عين (تمثيل الرؤية) -->
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 5c-5 0-9.27 3.11-11 7 1.73 3.89 6 7 11 7s9.27-3.11 11-7c-1.73-3.89-6-7-11-7zm0 12a5 5 0 1 1 0-10 5 5 0 0 1 0 10zm0-8a3 3 0 1 0 .001 6.001A3 3 0 0 0 12 9z"/></svg>
+      </div>
+      <h2>الرؤية</h2>
+      <p>
+
+أن نكون البنك الرائد والأكثر ابتكاراً في اليمن.</p>
+    </div>
+
+    <!-- بطاقة توصيات مالية ذكية -->
+    <div class="card">
+      <div class="icon-wrapper chat">
+        <!-- أيقونة مصباح (تمثيل الرسالة / الأفكار) -->
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 21h6v-1a3 3 0 0 0-6 0v1zm3-19a7 7 0 0 0-4 12.9V16a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1v-1.1A7 7 0 0 0 12 2z"/></svg>
+      </div>
+      <h2>الرسالة</h2>
+      <p>
+
+تقديم حلول وخدمات مالية رقمية متكاملة ومبتكرة، تمكن الأفراد والشركات من إدارة أموالهم بسهولة وأمان وكفاءة، عبر منصات تقنية متقدمة، بما يساهم في دفع عجلة التنمية الاقتصادية والشمول المالي في اليمن.</p>
+    </div>
+
+    <!-- بطاقة تحويلات فورية -->
+
+    <!-- بطاقة إدارة مالية شخصية -->
+    
+
+    <!-- بطاقة خدمة عملاء فورية -->
+
+    <!-- بطاقة أمان عالي -->
+   
+    <!-- بطاقة حسابات متعددة العملات -->    
+
+    <!-- بطاقة قابلية التوسع -->
+  </div>
+</body>
+</html>
